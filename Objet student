@@ -1,0 +1,26 @@
+// Étape 1 : Créer l'objet student
+let student = {
+    name: "Marie",
+    age: 20,
+    courses: []
+};
+
+// Étape 2 : Modifier les propriétés de l'objet
+student.age = 21; // Changer l'âge à 21
+student.grade = "A"; // Ajouter la propriété grade avec la valeur "A"
+
+// Étape 3 : Travailler avec le tableau courses
+student.courses.push("Math", "Physics", "Chemistry"); // Ajouter des cours dans le tableau
+
+// Trouver l'index de "Physics"
+let physicsIndex = student.courses.indexOf("Physics");
+
+// Utiliser slice pour extraire les deux premiers éléments
+let firstTwoCourses = student.courses.slice(0, 2);
+
+// Étape 4 : Afficher les résultats
+console.log("Objet student avec les modifications :", student);
+console.log("Index de 'Physics' dans courses :", physicsIndex);
+console.log("Les deux premiers cours :", firstTwoCourses);
+
+
